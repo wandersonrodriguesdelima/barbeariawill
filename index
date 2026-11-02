@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Willian Barber - Barbearia moderna. Agende seu corte e barba.">
+    <title>Willian Barber | Barbearia</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                WILLIAN<span>BARBER.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+
+            <a href="#agendamento" class="btn-header">
+                Agendar agora
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-content container">
+
+                <span class="hero-subtitle">
+                    WILLIAN BARBER • DESDE SEMPRE COM ESTILO
+                </span>
+
+                <h1>
+                    SEU ESTILO.<br>
+                    SUA IDENTIDADE.
+                </h1>
+
+                <p>
+                    Mais do que um corte, uma experiência.
+                    Venha renovar seu visual com quem entende de estilo.
+                </p>
+
+                <a href="#agendamento" class="btn-primary">
+                    RESERVE SEU HORÁRIO
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section class="services section" id="servicos">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>O QUE OFERECEMOS</span>
+                    <h2>NOSSOS SERVIÇOS</h2>
+                    <p>Qualidade e cuidado em cada detalhe.</p>
+                </div>
+
+                <div class="service-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon">✂</div>
+                        <h3>Corte de cabelo</h3>
+                        <p>
+                            Um corte personalizado para valorizar
+                            seu estilo e sua personalidade.
+                        </p>
+                        <div class="service-price">
+                            <span>A partir de</span>
+                            <strong>R$ 39,00</strong>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">✦</div>
+                        <h3>Barba</h3>
+                        <p>
+                            Acabamento preciso e cuidado especial
+                            para manter sua barba impecável.
+                        </p>
+                        <div class="service-price">
+                            <span>A partir de</span>
+                            <strong>R$ 30,00</strong>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AGENDAMENTO -->
+        <section class="booking section" id="agendamento">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>SEU PRÓXIMO VISUAL COMEÇA AQUI</span>
+                    <h2>AGENDE SEU HORÁRIO</h2>
+                    <p>Escolha o serviço, a data e o horário desejado.</p>
+                </div>
+
+                <div class="booking-container">
+
+                    <div class="booking-info">
+                        <span class="booking-number">01 / AGENDAMENTO</span>
+
+                        <h3>Seu tempo merece<br>um bom cuidado.</h3>
+
+                        <p>
+                            Organize sua visita e escolha o melhor
+                            momento para cuidar do seu visual.
+                        </p>
+
+                        <div class="booking-detail">
+                            <span>✂</span>
+                            <div>
+                                <strong>Corte de cabelo</strong>
+                                <p>R$ 39,00</p>
+                            </div>
+                        </div>
+
+                        <div class="booking-detail">
+                            <span>✦</span>
+                            <div>
+                                <strong>Barba</strong>
+                                <p>R$ 30,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <form class="booking-form" action="#" method="get">
+
+                        <h3>Solicitar agendamento</h3>
+
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Digite seu nome"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input
+                                type="tel"
+                                id="telefone"
+                                name="telefone"
+                                placeholder="(00) 00000-0000"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servico">Escolha o serviço</label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="Corte de cabelo">
+                                    Corte de cabelo - R$ 39,00
+                                </option>
+                                <option value="Barba">
+                                    Barba - R$ 30,00
+                                </option>
+                                <option value="Corte e barba">
+                                    Corte + barba - R$ 69,00
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="data">Data</label>
+                                <input
+                                    type="date"
+                                    id="data"
+                                    name="data"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="horario">Horário</label>
+                                <input
+                                    type="time"
+                                    id="horario"
+                                    name="horario"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="observacao">Observações</label>
+                            <textarea
+                                id="observacao"
+                                name="observacao"
+                                placeholder="Alguma preferência? (opcional)"
+                                rows="3"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            SOLICITAR AGENDAMENTO →
+                        </button>
+
+                        <small>
+                            O horário estará sujeito à confirmação da barbearia.
+                        </small>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOCALIZAÇÃO -->
+        <section class="location section" id="localizacao">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>VENHA NOS VISITAR</span>
+                    <h2>ONDE ESTAMOS</h2>
+                    <p>Estamos esperando por você.</p>
+                </div>
+
+                <div class="location-container">
+
+                    <div class="location-info">
+                        <span class="location-icon">⌖</span>
+                        <h3>Willian Barber</h3>
+
+                        <p>
+                            Rua João Rodrigues Pires, 140
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Rua+Joao+Rodrigues+Pires+140"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-location"
+                        >
+                            COMO CHEGAR →
+                        </a>
+                    </div>
+
+                    <div class="map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Rua%20Joao%20Rodrigues%20Pires%20140&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização Willian Barber"
+                        ></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#inicio" class="logo">
+                WILLIAN<span>BARBER.</span>
+            </a>
+
+            <p>
+                Estilo não se explica. Se demonstra.
+            </p>
+
+            <span class="copyright">
+                © 2026 Willian Barber. Todos os direitos reservados.
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+:root {
+    --black: #111111;
+    --black-light: #191919;
+    --black-card: #202020;
+    --white: #ffffff;
+    --gray: #a5a5a5;
+    --border: #353535;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+.header {
+    background-color: #111111;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #999999;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--white);
+}
+
+.btn-header {
+    border: 1px solid #ffffff;
+    padding: 11px 22px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+
+/* ==============================
+   APRESENTAÇÃO
+============================== */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=85");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero-subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #cccccc;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 85px);
+    line-height: 1.08;
+    margin: 25px 0;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.hero p {
+    color: #cccccc;
+    max-width: 480px;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 16px 30px;
+    background-color: #ffffff;
+    color: #111111;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #bdbdbd;
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   TÍTULOS DAS SEÇÕES
+============================== */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading span {
+    color: #999999;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 12px 0;
+    letter-spacing: 1px;
+}
+
+.section-heading p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+
+/* ==============================
+   SERVIÇOS
+============================== */
+
+.services {
+    background-color: #151515;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.service-card {
+    background-color: var(--black-card);
+    border: 1px solid var(--border);
+    padding: 40px 35px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    border-color: #888888;
+}
+
+.service-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--gray);
+    font-size: 14px;
+    min-height: 65px;
+}
+
+.service-price {
+    border-top: 1px solid var(--border);
+    margin-top: 25px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-price span {
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.service-price strong {
+    font-size: 19px;
+}
+
+
+/* ==============================
+   AGENDAMENTO
+============================== */
+
+.booking {
+    background-color: #111111;
+}
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.booking-info {
+    padding-top: 25px;
+}
+
+.booking-number {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #999999;
+}
+
+.booking-info h3 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.booking-info > p {
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.booking-detail {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+}
+
+.booking-detail > span {
+    font-size: 25px;
+}
+
+.booking-detail strong {
+    font-size: 14px;
+}
+
+.booking-detail p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+
+/* FORMULÁRIO */
+
+.booking-form {
+    background-color: #1b1b1b;
+    padding: 40px;
+    border: 1px solid var(--border);
+}
+
+.booking-form h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #dddddd;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: #111111;
+    border: 1px solid #3a3a3a;
+    color: #ffffff;
+    outline: none;
+    font-family: inherit;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ffffff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777777;
+}
+
+.form-group input[type="date"],
+.form-group input[type="time"] {
+    color-scheme: dark;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 17px;
+    background-color: #ffffff;
+    color: #111111;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #c4c4c4;
+}
+
+.booking-form small {
+    display: block;
+    margin-top: 17px;
+    color: #888888;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+/* ==============================
+   LOCALIZAÇÃO
+============================== */
+
+.location {
+    background-color: #181818;
+}
+
+.location-container {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    background-color: #202020;
+    border: 1px solid var(--border);
+    min-height: 350px;
+}
+
+.location-info {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.location-icon {
+    font-size: 35px;
+}
+
+.location-info h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.location-info p {
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.btn-location {
+    display: inline-block;
+    padding: 13px 22px;
+    border: 1px solid #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-location:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.map {
+    min-height: 350px;
+}
+
+.map iframe {
+    display: block;
+}
+
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+.footer {
+    background-color: #0b0b0b;
+    border-top: 1px solid var(--border);
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    color: #999999;
+    font-size: 13px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
+    color: #777777;
+    font-size: 11px;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .location-container {
+        grid-template-columns: 1fr;
+    }
+
+    .location-info {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .navbar {
+        padding: 20px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero-subtitle {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form {
+        padding: 25px 18px;
+    }
+
+    .booking-info h3 {
+        font-size: 30px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
